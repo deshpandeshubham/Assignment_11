@@ -11,9 +11,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script>
-        $('.carousel').carousel();
-    </script>
 </head>
 <body>
     <header>
@@ -97,50 +94,60 @@
             </div>
         </div>
     </header>
-    <main role="main">        
-        <div class="container-fluid" id="content">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2>Welcome</h2>
-                    <p>With innovative approaches and advanced methodologies, Vecta Corporation provides scalable business solutions to help companies achieve success through revenue increase, cost management, and user satisfaction. Our approach stems from the three most important business growth aspects: helping companies reach prospects, assist in converting prospects to customers, and assist in retaining those customers. This is accomplished through our interactive solutions and expertise in providing a memorable and positive user experience.</p>
-                </div>
-                <div class="col-md-4">
-                    <h2>Our Solutions</h2> 
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item"><a class="nav-link active" id="vprospect-tab" data-toggle="tab" href="#vprospect" role="tab" aria-controls="vprospect" aria-selected="true">vPropect2.0</a></li>
-                        <li class="nav-item"><a class="nav-link" id="vconvert-tab" data-toggle="tab" href="#vconvert" role="tab" aria-controls="vconvert" aria-selected="false">vConvert2.0</a></li>
-                        <li class="nav-item"><a class="nav-link" id="vretain-tab" data-toggle="tab" href="#vretain" role="tab" aria-controls="vretain" aria-selected="false">vRetain1.0</a></li>
-                    </ul>
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="vprospect" role="tabpanel" aria-labelledby="vprospect-tab">Define and research your target audience, define your strategy to reach that audience and present a strong and memorable brand to that audience.</div>
-                        <div class="tab-pane fade" id="vconvert" role="tabpanel" aria-labelledby="vconvert-tab">Create a highly user-friendly and easy-to-navigate information architecture that will help your prospects interact with the company on a highly interactive level.</div>
-                        <div class="tab-pane fade" id="vretain" role="tabpanel" aria-labelledby="vretain-tab">Build on existing customer relationships to improve productivity and maximize customer loyalty, while growing revenues.</div>
+    <main role="main">    
+        <div class="container">  
+            <h2 class="text-center">Management Team</h2><br>  
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Agnes</button></h2>
                     </div>
-               </div>
-                <div class="col-md-4">
-                    <h2>Client Testimonials</h2>
-                    <p>
-                        <a class="btn btn-primary" data-toggle="collapse" href="#testimonial1" role="button" aria-expanded="false" aria-controls="collapseExample">Aaron D. Tyres</a>
-                        <a class="btn btn-primary" data-toggle="collapse" href="#testimonial2" role="button" aria-expanded="false" aria-controls="collapseExample">Robin Banks</a>
-                    </p>
-                    <div class="collapse" id="testimonial1">
-                        <div class="card card-body">
-                            Throughout the years we have worked with Vecta Corporation, we have always been amazed at the level of dedication and professionalism that they have provided us and our WGDC products. It is this commitment that has increased both our income and exposure exponentially.<br><br>
-                            <strong>CEO</strong>
-                            <em>American Rubber, Inc.</em>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p><strong>Vice President, Accounting</strong><br><br>
+                            With over 14 years of public accounting and business advisory service experience in the Tongas, Ecuador, Canada, Botswana and the US, Agnes is the most seasoned and diversed member of the Vecta Corp. team.</p>
                         </div>
                     </div>
-                    <div class="collapse" id="testimonial2">
-                        <div class="card card-body">
-                            Incredible results from an incredible effort by the Vecta Corporation team! We are very pleased with the business benefits we have rceived by working with them.<br><br>
-                            <strong>CTO</strong>
-                            <em>Profits Financial, LLC.</em>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Damon</button></h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p><strong>Director of Development</strong><br><br>
+                            Damon is the Director of Development for Vecta Corp. Damon creates learning materials for Vecta Corp. as well as consulting for customers to integrate vSolutions into their production pipeline and business processes. Vecta Corp. is creating the next revolution of digital media applications that incorporates 2D, 3D, sound, and video into a single multimedia presentations that can be distributed on the Web, CD/DVD-ROM, Kiosks, or intranet environments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Herbert</button></h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p><strong>Director of Human Resources</strong><br><br>
+                            Herbert joined Vecta Corp. in October 1999 as Vecta Corp's first Human Resources Director. As such, he has overall human resources responsibility for Vecta Corp's operations worldwide and is based at the company's global headquarters in San Diego. Although responsible for Vecta Corp's human resources strategies globally, Herbert's work is directly focused on assuring complete employee satisfaction and loyalty.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Mike</button></h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p><strong>Vice President, Sales and Marketing</strong><br><br>
+                            Mike serves as the Vice President of Sales and Marketing for Vecta Corp. In this role Mike oversees Vecta Corp's marketing and corporate communications efforts worldwide. Mike joined Vecta Corp. in early 1998 and worked in business development roles prior to being assigned to lead Vecta Corp's global vSolutions sales and marketing team in the summer of 2000. He initiated Vecta Corp's global branding and marketing campaigns as vSolutions global director and then Vice President of Marketing. In 2001, his role expanded to include overall responsibility for corporate marketing, sales, and communications.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <hr>
-        </div> 
+        <hr>
+        </div>
     </main>
     <footer class="container text-center">
         <p>Copyright &copy; 2019, All rights reserved</p>
